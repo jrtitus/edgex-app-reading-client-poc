@@ -1,0 +1,23 @@
+Writable:
+  LogLevel: DEBUG
+
+Service:
+  Host: localhost
+  Port: 59000
+  StartupMsg: TESTING
+  MaxRequestSize: 0
+  RequestTimeout: 5s
+
+Clients:
+  core-data:
+    Protocol: http
+    Host: localhost
+    Port: 59880
+  core-metadata:
+    Protocol: http
+    Host: localhost
+    Port: 59881
+
+MessageBus:
+  Optional:
+    ClientId: app-sdk-test
